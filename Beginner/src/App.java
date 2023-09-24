@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -23,11 +24,24 @@ public class App {
         arrObject.printArray(arr);*/
 
         //Matching Parentheses
-        MatchingParentheses match = new MatchingParentheses();
+        /*MatchingParentheses match = new MatchingParentheses();
         match.hasMatchParentheses("((algorithm()))");
         match.hasMatchParentheses("(()algorithm())");
         match.hasMatchParentheses(")(algorithm()))");
-        match.hasMatchParentheses("((algorithm)()))");
+        match.hasMatchParentheses("((algorithm)()))");*/
+
+        // Detect Cyclic Linked List
+        
+        
+        
+        CustomLinkedList linkedlist = new CustomLinkedList();
+        linkedlist.addFirst(new Node(0));
+        linkedlist.addFirst(new Node(1));
+        linkedlist.addLast(new Node(2));
+        linkedlist.addLast(new Node(1));
+        linkedlist.displayCustomLinkedList();
+        
+
         
         
 
